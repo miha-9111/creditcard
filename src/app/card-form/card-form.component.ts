@@ -20,4 +20,8 @@ export class CardFormComponent {
   constructor() {
     console.log(this.cardForm.get('name'));
   }
+
+  onSubmit() {
+    console.log('Form was submitted');
+  }
 }
