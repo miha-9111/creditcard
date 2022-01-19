@@ -14,5 +14,7 @@ export class CardFormComponent {
     ])
   });
 
-  constructor() {}
+  constructor() {
+    console.log(this.cardForm.get('name'));
+  }
 }
