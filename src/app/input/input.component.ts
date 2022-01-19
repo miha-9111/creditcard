@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { FormControl } from "@angular/forms";
 
 @Component({
   selector: 'app-input',
@@ -8,7 +7,13 @@ import { FormControl } from "@angular/forms";
 })
 export class InputComponent {
   @Input() control: any;
+  @Input() label!: string;
 
   constructor() {}
+
+  showErrors() {
+    const { dirty, touched, errors } = this.control;
+    return dirty && touched && errors;
+  }
 
 }
