@@ -19,5 +19,12 @@
       {{ control.errors['minlength'].requiredLength }}
       characters
     </div>
+    <div class="help is-danger" *ngIf="control.errors['maxlength']">
+      Value you entered is
+      {{ control.errors['maxlength'].actualLength }}
+      characters long, but it cannot be longer than
+      {{ control.errors['maxlength'].requiredLength }}
+      characters
+    </div>
   </ng-container>
 </div>
