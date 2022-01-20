@@ -4,8 +4,7 @@
     <input
       class="input"
       [formControl]="control"
-      [ngClass]="{ 'is-danger': showErrors() }"
-    >
+      [ngClass]="{ 'is-danger': showErrors() }">
   </div>
   <ng-container
     *ngIf="showErrors()">
