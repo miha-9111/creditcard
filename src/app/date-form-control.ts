@@ -1,7 +1,7 @@
 import { FormControl } from "@angular/forms";
 
 export class DateFormControl extends FormControl {
-  setValue(value: string | null, options:any) {
+  setValue(value: string | null, options: any) {
     if (!value) {
       super.setValue('', { ...options, emitModelToViewChange: true });
       return;

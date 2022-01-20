@@ -15,8 +15,8 @@ export class CardFormComponent {
     ]),
     cardNumber: new FormControl('', [
       Validators.required,
-      Validators.minLength(16),
-      Validators.maxLength(16),
+      Validators.minLength(19),
+      Validators.maxLength(19),
       Validators.pattern(/[1-9]/)
     ]),
     expiration: new DateFormControl('', [
@@ -26,7 +26,7 @@ export class CardFormComponent {
     securityCode: new FormControl('', [
       Validators.required,
       Validators.minLength(3),
-      Validators.maxLength(3)
+      Validators.maxLength(3),
     ])
   });
 

@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class InputComponent {
   @Input() control: any;
-  @Input() label!: string;
+  @Input() label: string;
 
   constructor() {}
 
